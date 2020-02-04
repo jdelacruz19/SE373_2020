@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+</head>
+<body>
+    <div>This is {{name}} homepage!</div>
+    
+    <form action="/result" method="post">
+        <select name='selectNum'> 
+            <option value="3">3</option> 
+            <option value="4">4</option> 
+            <option value="5">5</option> 
+            <option value="10">10</option>
+            <option value="20">20</option>
+        </select> 
+
+        <div>
+            <input type="submit"></input>
+        </div>
+        
+    
+    </form>
+
+    {{{tableGenerator selection color}}}
+
+    {{> footer}}
+
+</body>
+</html>
